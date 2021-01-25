@@ -14,6 +14,7 @@ I have written `buzz-client-mqtt.js` client and you can send vibration frames vi
 #### Setup Softwares on Raspberry Pi
 Assuming you have Debian Buster installed. 
 
+```
 sudo apt-get update && \
 sudo apt-get install -yq \
     build-essential \
@@ -35,6 +36,8 @@ sudo apt-get install -yq \
   
   git clone https://github.com/donatieng/Adafruit_Python_BluefruitLE.git
   cd Adafruit_Python_BluefruitLE && sudo python3 setup.py install
+  
+  ```
   
   #### Clone and Run (same on both Mac and Pi)
   
