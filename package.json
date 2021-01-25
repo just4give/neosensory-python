@@ -1,0 +1,16 @@
+{
+  "name": "neosensory-python",
+  "version": "1.0.0",
+  "description": "",
+  "main": "buzz-client-mqtt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mqtt": "^4.2.6",
+    "ws": "^7.4.2"
+  }
+}
