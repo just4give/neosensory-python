@@ -1,6 +1,6 @@
 const WebSocket = require('ws');
 const mqtt = require('mqtt');
-const uuidv4 = require('uuid/v4');
+const { v4: uuidv4 } = require('uuid');
 const buzztopic = `/neoosensory/sdk/python/${uuidv4()}/rumble`
 
 function connect() {
