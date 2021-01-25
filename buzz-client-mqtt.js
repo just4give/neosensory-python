@@ -1,6 +1,7 @@
 const WebSocket = require('ws');
 const mqtt = require('mqtt');
-
+const uuidv4 = require('uuid/v4');
+const buzztopic = `/neoosensory/sdk/python/${uuidv4()}/rumble`
 
 function connect() {
 
@@ -44,7 +45,10 @@ function connect() {
 
   mqttClient.on('connect', () => {
     console.log("Connected to MQTT ...");
-    mqttClient.subscribe('/neoosensory/sdk/python/rumble');
+    mqttClient.subscribe(buzztopic);
+    
+    console.log(`\nSubscribed to topic ${buzztopic}`);
+    console.log(`Publish [255,255,255,255,0,0,0,0] to vibrate neosensory buzz.\n`);
   });
 
   mqttClient.on('disconnect', () => {
@@ -54,7 +58,7 @@ function connect() {
   mqttClient.on('message', (topic, message) => {
 
     try {
-      if (topic === '/neoosensory/sdk/python/rumble') {
+      if (topic === buzztopic) {
         console.log(message.toString());
         ws.send(message.toString());
       }
