@@ -72,6 +72,9 @@ You should feel the vibration on your buzz and some information on terminal.
 
 <img width="877" alt="Screen Shot 2021-01-25 at 3 55 09 PM" src="https://user-images.githubusercontent.com/9275193/105765030-c6e11300-5f25-11eb-8e15-101d117ad9e2.png">
 
+#### Demo from Raspberry Pi 4 
+
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/9275193/105768169-fb56ce00-5f29-11eb-9dc9-8e6a7a4bf8ae.gif)
 
 
 
