@@ -77,6 +77,12 @@ You should feel the vibration on your buzz and some information on terminal.
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/9275193/105768169-fb56ce00-5f29-11eb-9dc9-8e6a7a4bf8ae.gif)
 
 
+#### Exit program on Mac
+If you have trouble terminating the python program, find the process id and kill it.
+
+```
+ps aux|grep "ble-central.py"
+```
 
   
   
