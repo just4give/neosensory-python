@@ -6,8 +6,8 @@ I have written `buzz-client-mqtt.js` client and you can send vibration frames vi
 
 #### This repo was tested on
 
-- Mac 10.15.6 Catalina
-- Raspberry Pi 4 32 bit (Debian Buster 10)
+- Mac 10.15.6 Catalina ( Python 3 , Node 8 ) 
+- Raspberry Pi 4 32 bit (Debian Buster 10) ( Python 3, Node 10)
 
 
 
@@ -75,6 +75,10 @@ You should feel the vibration on your buzz and some information on terminal.
 #### Demo from Raspberry Pi 4 
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/9275193/105768169-fb56ce00-5f29-11eb-9dc9-8e6a7a4bf8ae.gif)
+
+#### Demo from Mac Catalina 10.15.6
+
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/9275193/105799844-78eb0000-5f63-11eb-8272-ca0e90756492.gif)
 
 
 #### Exit program on Mac
