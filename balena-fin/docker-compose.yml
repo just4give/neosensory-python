@@ -1,0 +1,19 @@
+version: '2'
+services: 
+  
+  ble-central:
+        build: ./ble-central
+        restart: on-failure
+        privileged: true
+        network_mode: host
+        ports:
+                - "3141"
+        entrypoint: ["/bin/sh", "-c", 'echo "127.0.0.1 $HOSTNAME" | sudo tee -a /etc/hosts; python3 /usr/src/app/server.py']
+        cap_add:
+                - NET_ADMIN
+        labels:
+                io.balena.features.dbus: 1
+                io.balena.features.supervisor-api: 1
+volumes:
+        shared-data: 
+        shared-media:
